@@ -4,9 +4,12 @@ template.innerHTML = `
 
     <style>
         .fact-card{
-            border: 4px solid red;
-            margin-bottom: 10px;
-            height: 99vh;
+            border: 4px solid black;
+            background-color: green;
+            height: 100vh
+        }
+
+        @media screen and (max-device-width: 767px){
         }
     </style>
 
