@@ -26,7 +26,7 @@ template.innerHTML = `
     }
 
     ::slotted(img){
-        width: 100%
+        width: 100%;
     }
 
     div{
