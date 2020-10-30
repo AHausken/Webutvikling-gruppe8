@@ -7,8 +7,8 @@ template.innerHTML = `
         height: 100vh;
         display: grid;
         grid-gap: 5px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(10, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(20, 1fr);
         border: hidden;
 
     }
@@ -21,22 +21,63 @@ template.innerHTML = `
         padding: 5px;
     }
 
+    ::slotted(iframe){
+        width: 100%;
+    }
+
+    ::slotted(img){
+        width: 100%
+    }
+
     div{
         border: 5px solid black;
     }
+
+    .header{
+        grid-column: 1/1;
+        grid-row: 1/1;
+        text-align: center;
+    }
+
     .card1{
-        background-color: green;
-        grid-column: 1/2;
-        grid-row: 1/3;
-        
+        background-color: darkcyan;
     }
 
     .card2{
         background-color: gold;
+
+    }
+
+    .card3{
+        background-color: silver;
+    }
+
+    .card4{
+        background-color: olive;
+    }
+
+    .card5{
+        background-color: salmon;
     }
 
     .card6{
+        background-color: red;
+    }
+
+    .card7{
+        background-color: grey;
+    }
+
+    .card8{
         background-color: pink;
+    }
+
+    .card9{
+        background-color: white;
+    }
+
+    .card10{
+        background-color: green;
     }
 
 
@@ -44,6 +85,10 @@ template.innerHTML = `
 
 
     <div class="container">
+
+        <h1 class="header">
+            <slot name="header"></slot>
+        </h1>
 
         <div class="card1">
         <slot name="fact-h1"></slot>
@@ -106,8 +151,6 @@ class FactBox extends HTMLElement{
 
         this.attachShadow({mode: 'open'});
         this.shadowRoot.appendChild(template.content.cloneNode(true));
-        this.shadowRoot.querySelector('h3').innerText = this.getAttribute('name');
-        this.shadowRoot.querySelector('p').innerText = this.getAttribute('info');
     }
 }
 
