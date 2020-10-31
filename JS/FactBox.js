@@ -10,6 +10,7 @@ template.innerHTML = `
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(9, 1fr);
         border: hidden;
+        padding: 5px;
 
     }
 
@@ -23,10 +24,12 @@ template.innerHTML = `
 
     ::slotted(iframe){
         width: 100%;
+        border-radius: 3%;
     }
 
     ::slotted(img){
         width: 100%;
+        border-radius: 3%;
     }
 
     div{
@@ -84,9 +87,71 @@ template.innerHTML = `
     }
 
     .card9{
-        background-color: white;
+        background-color: black;
         grid-column: 1/3;
     }
+
+    @media screen and (max-width: 1700px){
+        .container{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+    }
+
+    .header{
+        grid-column: 1/7;
+        grid-row: 1/2;
+    }
+
+    .card1{
+        background-color: darkcyan;
+        grid-column: 1/7;
+
+    }
+
+    .card2{
+        background-color: gold;
+        grid-column: 1/4;
+
+    }
+
+    .card3{
+        background-color: silver;
+        grid-column: 4/7;
+    }
+
+    .card4{
+        background-color: olive;
+        grid-column: 1/7;
+    }
+
+    .card5{
+        background-color: salmon;
+        grid-column: 4/7;
+    }
+
+    .card6{
+        background-color: white;
+        grid-column: 4/7;
+        grid-row: 6/7;
+
+    }
+
+    .card7{
+        background-color: brown;
+        grid-column: 1/4;
+        grid-row: 5/6;
+    }
+
+    .card8{
+        background-color: white;
+        grid-column: 1/4;
+    }
+
+    .card9{
+        grid-column: 1/7;
+    }
+}
 
 
 
@@ -110,39 +175,42 @@ template.innerHTML = `
     
         .card2{
             background-color: gold;
-            grid-column: 1/3;
+            grid-column: 1/5;
     
         }
     
         .card3{
             background-color: silver;
-            grid-column: 3/5;
-            grid-row: 3/
+            grid-column: 1/5;
+            grid-row: 4/5
         }
     
         .card4{
             background-color: olive;
             grid-column: 1/5;
+            grid-row: 5/6;
         }
     
         .card5{
             background-color: salmon;
-            grid-column: 1/5;
+            grid-column: 3/5;
         }
     
         .card6{
             background-color: red;
-            grid-column: 1/3;
+            grid-column: 3/5;
+            grid-row: 7/8;
         }
     
         .card7{
             background-color: brown;
-            grid-column: 3/5;
+            grid-column: 1/3;
+            grid-row: 6/7;
         }
     
         .card8{
-            background-color: pink;
-            grid-column: 2/4;
+            background-color: blue;
+            grid-column: 1/3;
         }
 
         .card9{
@@ -150,7 +218,7 @@ template.innerHTML = `
         }
     }
 
-    @media screen and (max-width: 400px){
+    @media screen and (max-width: 560px){
         .container{
             display: grid;
             grid-template-columns: repeat(3, 1fr);
@@ -208,67 +276,6 @@ template.innerHTML = `
     }
 }
 
-}
-
-
-
-    @media screen and (max-width: 1700px){
-        .container{
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            grid-template-rows: repeat(10, 1fr);
-    }
-
-    .header{
-        grid-column: 1/7;
-        grid-row: 1/2;
-    }
-
-    .card1{
-        background-color: darkcyan;
-        grid-column: 1/7;
-
-    }
-
-    .card2{
-        background-color: gold;
-        grid-column: 4/7;
-
-    }
-
-    .card3{
-        background-color: silver;
-        grid-column: 1/4;
-    }
-
-    .card4{
-        background-color: olive;
-        grid-column: 1/7;
-    }
-
-    .card5{
-        background-color: salmon;
-        grid-column: 1/4;
-    }
-
-    .card6{
-        background-color: red;
-        grid-column: 4/7;
-    }
-
-    .card7{
-        background-color: brown;
-        grid-column: 1/4;
-    }
-
-    .card8{
-        background-color: pink;
-        grid-column: 4/7;
-    }
-
-    .card9{
-        grid-column: 1/7;
-    }
 }
 
 
