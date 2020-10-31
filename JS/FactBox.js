@@ -47,28 +47,34 @@ template.innerHTML = `
         background-color: darkcyan;
         grid-column: 1/3;
         grid-row: 2/3;
+        font-size: 1.3em;
     }
 
     .card2{
         background-color: gold;
         grid-column: 1/3;
         grid-row: 3/4;
+        font-size: 1.2em;
+        
 
     }
 
     .card3{
         background-color: silver;
         grid-column: 1/3;
+        font-size: 1.3em;
     }
 
     .card4{
         background-color: olive;
         grid-column: 1/3;
+        font-size: 1.3em;
     }
 
     .card5{
         background-color: blue;
         grid-column: 1/3;
+        font-size: 1.2em;
     }
 
     .card6{
@@ -79,10 +85,11 @@ template.innerHTML = `
     .card7{
         background-color: brown;
         grid-column: 1/3;
+        font-size: 1.3em;
     }
 
     .card8{
-        background-color: pink;
+        background-color: red;
         grid-column: 1/3;
     }
 
@@ -277,6 +284,7 @@ template.innerHTML = `
 }
 
 }
+
 
 
     </style>
