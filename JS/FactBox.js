@@ -78,7 +78,7 @@ template.innerHTML = `
     }
 
     .card6{
-        background-color: red;
+        background-color: white;
         grid-column: 1/3;
     }
 
@@ -89,7 +89,7 @@ template.innerHTML = `
     }
 
     .card8{
-        background-color: red;
+        background-color: white;
         grid-column: 1/3;
     }
 
@@ -199,7 +199,7 @@ template.innerHTML = `
         }
     
         .card5{
-            background-color: salmon;
+            background-color: white;
             grid-column: 3/5;
         }
     
@@ -210,7 +210,7 @@ template.innerHTML = `
         }
     
         .card7{
-            background-color: brown;
+            background-color: white;
             grid-column: 1/3;
             grid-row: 6/7;
         }
@@ -259,12 +259,12 @@ template.innerHTML = `
     }
 
     .card5{
-        background-color: salmon;
+        background-color: pink;
         grid-column: 1/4;
     }
 
     .card6{
-        background-color: red;
+        background-color: white;
         grid-column: 1/4;
     }
 
@@ -274,7 +274,7 @@ template.innerHTML = `
     }
 
     .card8{
-        background-color: pink;
+        background-color: white;
         grid-column: 1/4;
     }
 
