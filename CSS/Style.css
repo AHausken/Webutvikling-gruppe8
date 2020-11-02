@@ -57,12 +57,10 @@ nav{
 
 
 .food-pic{
-    height: 85%;
-    width: auto;
+    width: 100%;
 }
 
 .food-card{
-    height: 400px;
     margin: 5px;
     border: 1px solid black;
     border-radius: 20px;
