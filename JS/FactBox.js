@@ -341,7 +341,6 @@ template.innerHTML = `
             <slot name="fact-c9"></slot>
         </div>
 
-    
     </div>
         
 `;
@@ -356,3 +355,4 @@ class FactBox extends HTMLElement{
 }
 
 window.customElements.define('fact-box', FactBox);
+
