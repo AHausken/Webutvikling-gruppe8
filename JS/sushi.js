@@ -1,8 +1,6 @@
 
 
-const getFoodCard = () => {
-
-    return foodArray = [
+const meals = [
         {
             id: 1,
             name: "Dry-fish",
@@ -22,7 +20,7 @@ const getFoodCard = () => {
         {
             id: 3,
             name: "salmon-maki" ,
-            imageSrc: "salamon-maki.jpg",
+            imageSrc: "salmon-maki.jpg",
             price: 79,
             info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, quasi!"
         },
@@ -30,7 +28,7 @@ const getFoodCard = () => {
         {
             id: 4,
             name: "Sumo-deluxe-combo",
-            imageSrc: "sumo_deluxe-combo-16_9.jpg",
+            imageSrc: "Sumo-deluxe-combo-16_9.jpg",
             price: 250,
             info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, quasi!"
         },
@@ -66,5 +64,4 @@ const getFoodCard = () => {
             price: 105,
             info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, quasi!"
         }
-];
-}
+]
