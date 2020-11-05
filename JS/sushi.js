@@ -1,11 +1,9 @@
-
-
-const meals = [
+const getFood =  [
         {
             id: 1,
             name: "Dry-fish",
             imageSrc: "dry-fish.jpg",
-            price: 99,
+            price: 98,
             info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, quasi!"
         },
 
@@ -13,7 +11,7 @@ const meals = [
             id: 2,
             name: "flying-fish" ,
             imageSrc: "flyfish-sushi.jpg",
-            price: 120,
+            price: 139,
             info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, quasi!"
         },
 
@@ -21,7 +19,7 @@ const meals = [
             id: 3,
             name: "salmon-maki" ,
             imageSrc: "salmon-maki.jpg",
-            price: 79,
+            price: 50,
             info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, quasi!"
         },
 
@@ -29,7 +27,7 @@ const meals = [
             id: 4,
             name: "Sumo-deluxe-combo",
             imageSrc: "Sumo-deluxe-combo-16_9.jpg",
-            price: 250,
+            price: 270,
             info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, quasi!"
         },
 
@@ -37,7 +35,7 @@ const meals = [
             id: 5,
             name: "sushi-plate-big",
             imageSrc: "sushi-plate-big.JPG",
-            price: 199,
+            price: 155,
             info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, quasi!"
         },
 
@@ -53,7 +51,7 @@ const meals = [
             id: 7,
             name: "tempura-plate",
             imageSrc: "tempura-plate.jpg",
-            price: 150,
+            price: 179,
             info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, quasi!"
         },
 
@@ -64,4 +62,4 @@ const meals = [
             price: 105,
             info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, quasi!"
         }
-]
+];

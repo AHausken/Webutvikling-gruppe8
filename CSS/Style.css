@@ -57,6 +57,10 @@ body{
     width: 100%;
 }
 
+.filter{
+    margin: 20px;
+}
+
 
 #food-section{
     display: grid;
