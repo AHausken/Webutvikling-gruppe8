@@ -11,10 +11,6 @@ const showFood = () => {
 
 const filterPrice = () => {
     let priceArray = getFood.filter( food => food.price < inputP.value);
-    if(inputP.value == ""){
-        alert('Vennligst oppgi en max pris');
-        getFood();
-    }
     foodSection(priceArray);
 }
 
@@ -37,47 +33,3 @@ showFood();
 
 
 filterPris.addEventListener('click', filterPrice);
-
-
-
-
-
-
-
-
-
-
-/*
-const showFood = () =>{
-    let htmlTxt = "";
-    meals.forEach( food => {
-        htmlTxt += `
-        <article>
-        <img id="food-sec" src="Bilder/${ food.imageSrc }">
-        <h3>${food.name}</h3>
-        <p>${food.info}</p>
-        <p> Pris: ${food.price} kr</p>
-        </article>
-        `;
-    });
-    output.innerHTML = htmlTxt;
-}
-
-const filterPrice = () => {
-    let prisArray = meals.filter( meals => meals.price < 100);
-
-    let htmlTxt = "";
-    prisArray.forEach( food => {
-        htmlTxt += `
-        <article>
-        <img id="food-sec" src="Bilder/${ food.imageSrc }">
-        <h3>${food.name}</h3>
-        <p>${food.info}</p>
-        <p> Pris: ${food.price} kr</p>
-        </article>
-        `;
-    });
-    output.innerHTML = htmlTxt;
-    
-}
-*/
