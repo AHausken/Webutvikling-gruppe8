@@ -1,33 +1,63 @@
 
 function createForm(){
-   const inputBox = document.getElementById('form-display');
+   const inputBox = document.querySelector('.form-display');
    inputBox.innerHTML = `
-      <article>
-        <input type="text" placeholder="Navn" id="input-name">
-        <input type="text" placeholder="Skriv en anmeldelse" id="input-review">
-        <input type="button" onclick="inputButton()" value="Send inn" id="input-button">
-      </article>
+
+      
+         <form role="from" class="form-re" onsubmit="addReview(event)">
+
+         <label for="input-name">
+            Navn
+         </label>
+
+         <input type="text" name="fName" placeholder="Navn" id="input-name" required>
+
+         <label for="input-review">
+            Anmeldelse
+         </label>
+
+
+         <textarea id="input-review"></textarea>
+
+
+         <button class="show-re-Btn" type="submit">Legg til</button>
+
+         </form>
+      
+      
    `;
    document.getElementById('form-display').appendChild(inputBox);
 
 };
 
 
+const addReview = e => {
+   let reviewData = {
+      fName: document.getElementById('input-name').value,
+      review : document.getElementById('input-review').value
+   }
+   localStorage.setItem('reviewData', JSON.stringify(reviewData));
+   e.preventDefault();
+   outputReview()
+}
 
-function inputButton(){
-   
-   const inputName = document.getElementById('input-name').value;
-   const inputReview = document.getElementById('input-review').value;
-   const outputReview = document.getElementById('output-review');
-  
-   outputReview.innerHTML += `
-      <article class="comments">
-         <h3>${inputName}</h3>
-         <i class="fas fa-star"></i> <i class="fas fa-star"></i>  <i class="fas fa-star"></i>
-         <p>${inputReview}</p>
-      </article>
-      
+function outputReview(){
+   if(localStorage.getItem('reviewData')){
+      let {fName, review} = JSON.parse(localStorage.getItem('reviewData'));
+      const output = document.getElementById('output-review');
+      output.innerHTML += `
+
+         <article class="comments">
+            <h3>${fName}</h3>
+            <p>${review}</p>
+         </article>
+
+
    `;
+   }
 
+   document.getElementById('input-name').value = "";
+   document.getElementById('input-review').value = "";
+}
 
-};
+outputReview()

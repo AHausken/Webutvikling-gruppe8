@@ -10,75 +10,88 @@
 
     <div class="main-wrapper">
 
-        <header>
-            <h2>Anmeldelser</h2>
-        </header>
+        <nav>
+            <div id="myNavBar" class="navBar">
+                <a class="active" href="Anmeldelser.html">Anmeldelser og Info</a>
+                <a href="Index.html">Fancy sushi</a>
+                <a href="UU.html">UU</a>
+                <a href="Task2.html">Spill</a>
+                <a href="javascript:void(0);" class="icon" onclick="navBarFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>  
 
-        <section class="banner"></section>
 
         <main>
 
             <section id="review-section">
 
                 <article class="info">
-                    <h3>Kontakt informasjon</h3>
-                    <p>Mobil: +47 123 45 678</p>
-                    <p>Epost: Byen-beste@kristiania.no</p>
-                    <p>Adresse: Kvadraturen</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.2610763516082!2d10.742665416010096!3d59.911214371272756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e88371902fb%3A0x4812bb829faca24d!2sH%C3%B8yskolen%20Kristiania%20%7C%20Campus%20Kvadraturen!5e0!3m2!1sno!2sno!4v1604687580743!5m2!1sno!2sno" width="100%" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    <a href="#bottom">
 
-                        <button name="bottom" onclick="createForm()">Skriv anmeldelse</button>
+                    <h3>Sted og kontaktinformasjon</h3>
+
+                    <a class="location" href="https://www.google.com/maps/place/H%C3%B8yskolen+Kristiania+%7C+Campus+Kvadraturen/@59.9112117,10.7360994,15z/data=!4m8!1m2!2m1!1sh%C3%B8yskolen+kristiania!3m4!1s0x46416e88371902fb:0x4812bb829faca24d!8m2!3d59.9112117!4d10.7448541">
+                        <i class="fas fa-map-marker"></i> Kvadraturen
                     </a>
                     
+                    <p align="center" class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2000.2610763516082!2d10.742665416010096!3d59.911214371272756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e88371902fb%3A0x4812bb829faca24d!2sH%C3%B8yskolen%20Kristiania%20%7C%20Campus%20Kvadraturen!5e0!3m2!1sno!2sno!4v1604687580743!5m2!1sno!2sno" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </p>
+
+                    <p> <i class="fas fa-phone-alt"></i> +47 123 45 678</p>
+
+                    <p> <i class="fas fa-envelope"></i> Byen-beste@kristiania.no</p>
+
+                    
+
+                    <a href="#bottom">
+                        <button class="write-reBtn" onclick="createForm()">Skriv anmeldelse</button>
+                    </a>
                     
                 </article>
 
                 <article class="comments">
-                    <h3>Alexander Hausken</h3>
-                    <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eaque.</p>
-                </article>
-
-                <article class="comments">
-                    <h3>Alexander Hausken</h3>
-                    <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eaque.</p>
-                </article>
-
-                <article class="comments">
-                    <h3>Alexander Hausken</h3>
-                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eaque.</p>
-                </article>
-
-                <article class="comments">
-                    <h3>Alexander Hausken</h3>
-                    <i class="fas fa-star"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eaque.</p>
-                </article>
-
-                <article class="comments">
-                    <h3>Alexander Hausken</h3>
-                    <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eaque.</p>
-                </article>
-
-                <article class="comments">
-                    <h3>Alexander Hausken</h3>
+                    <h3 class="h3-comment">Alexander Hausken</h3>
                     <i class="fas fa-star"></i> <i class="fas fa-star"></i>  <i class="fas fa-star"></i>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eaque.</p>
+                    <p class="p-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eaque.</p>
                 </article>
+
+                <article class="comments">
+                    <h3 class="h3-comment">Alexander Hausken</h3>
+                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>  <i class="fas fa-star"></i>
+                    <p class="p-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eaque.</p>
+                </article>
+
+                <article class="comments">
+                    <h3 class="h3-comment">Alexander Hausken</h3>
+                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>  <i class="fas fa-star"></i>
+                    <p class="p-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eaque.</p>
+                </article>
+
+                <article class="comments">
+                    <h3 class="h3-comment">Alexander Hausken</h3>
+                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>  <i class="fas fa-star"></i>
+                    <p class="p-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eaque.</p>
+                </article>
+
+                <article class="comments">
+                    <h3 class="h3-comment">Alexander Hausken</h3>
+                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>  <i class="fas fa-star"></i>
+                    <p class="p-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eaque.</p>
+                </article>
+
+                <article class="comments">
+                    <h3 class="h3-comment">Alexander Hausken</h3>
+                    <i class="fas fa-star"></i> <i class="fas fa-star"></i>  <i class="fas fa-star"></i>
+                    <p class="p-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, eaque.</p>
+                </article>
+
 
                 <div id="output-review"></div>
 
-
-                <a href="bottom"></a>
-                <article>
-                    <div id="form-display"></div>
-                    <a href="#bottom"></a>
-                </article>
-
+                <article class="form-display comments"></article>
+        
             </section>
 
 
@@ -87,9 +100,10 @@
 
 
     </div>
-    <footer id="bottom"></footer>
-
+    <footer id="bottom">Høyskolen Kristiania &copy; </footer>
+    
 <script src="JS/reviewOutput.js"></script>
 <script src="https://kit.fontawesome.com/49f8d126a2.js" crossorigin="anonymous"></script>
+<script src="JS/nav-bar.js"></script>
 </body>
 </html>
