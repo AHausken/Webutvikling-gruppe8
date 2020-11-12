@@ -23,7 +23,7 @@ const getFood =  [
             imageSrc: "salmon-maki.jpg",
             price: 50,
             soda: "(Drikke + 35,-)",
-            info: "Salmon Maki Rolls er den mest gjenkjennelige formen for Sushi. De er de klassiske rullene med sushi ris fylt med rå fersk laks og vårløk og pakket inn i nori."
+            info: "Salmon Maki sushi ris fylt med rå fersk laks og vårløk og pakket inn i nori.<br> <br>"
         },
 
         {
@@ -41,7 +41,7 @@ const getFood =  [
             imageSrc: "sushi-plate-big.JPG",
             price: 155,
             soda: "(Drikke + 35,-)",
-            info: "5 biter laks servert med ris og sweet chilli saus!"
+            info: "5 biter laks servert med ris og sweet chilli saus!<br> <br>"
         },
 
         {
@@ -50,7 +50,7 @@ const getFood =  [
             imageSrc: "sushi-plate-small.jpg",
             price: 79,
             soda: "(Drikke + 35,-)",
-            info: "2 biter laks servert med ris og sweet chilli saus, Perfekt til den små sultne!"
+            info: "2 biter laks servert med ris og sweet chilli saus, Perfekt til den små sultne!<br> <br>"
         },
 
         {
@@ -59,7 +59,7 @@ const getFood =  [
             imageSrc: "tempura-plate.jpg",
             price: 179,
             soda: "(Drikke + 35,-)",
-            info: "Tempura er en japansk matrett bestående av frityrstekte grønnsaker og sjømatø."
+            info: "Tempura er en japansk matrett bestående av frityrstekte grønnsaker og sjømatø. <br> <br>"
         },
 
         {
@@ -68,6 +68,6 @@ const getFood =  [
             imageSrc: "tempura-prawn.jpg",
             price: 105,
             soda: "(Drikke + 35,-)",
-            info: "Sprø stekt reker med varm sennepsaus eller søt og sur saus med grønnsaker. Tempura serveres på en bolle med ris eller med kokte soba-nudler og strimlet gulrøtter eller daikon reddik."
+            info: "Sprø stekt reker med varm sennepsaus eller søt og sur saus med grønnsaker. Tempura serveres på en bolle med ris."
         }
 ];

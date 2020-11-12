@@ -41,7 +41,7 @@ body{
 .banner {
 
     margin-top: 15px;
-    height: 170px;
+    height: 200px;
     margin-bottom: 15px;
     border-radius: 2%;
     overflow: hidden;
@@ -68,6 +68,23 @@ body{
     font-size: 21px;
     margin-left: 20px;
     margin-top: 13px;
+}
+
+.order{
+    background-color: #165baa;
+        width: 100%;
+        color: white;
+        text-align: center;
+        float: inline-end;
+        text-decoration: none;
+        font-size: 5vw;
+        margin-bottom: 5px;
+        border-top: 1.5px solid black;
+        border-left: 1.5px solid #238f6d;
+        border-right: 1.5px solid #238f6d;
+        border-bottom: 1.5px solid black;
+        cursor: pointer;
+        border-radius: 5%;
 }
 
 #filter-pris, #inputP{
@@ -147,12 +164,17 @@ footer{
     #food-sec{
         min-height: 245px;
     }
+
+    .order{
+        font-size: 3.5vw;
+    }
     
 }
 
 @media (min-width: 978px){
     #food-section article{
         grid-column: auto / span 1;
+        max-height: 570px;
     }
     #food-section{
         margin: 20px;
@@ -171,11 +193,18 @@ footer{
     }
 
     .banner{
-        height: 550px;
+        height: 520px;
+        text-align: center;
     }
+
+
 
     #food-sec{
         min-height: 245px;
+    }
+
+    .order{
+        font-size: 1.5vw;
     }
 }
 

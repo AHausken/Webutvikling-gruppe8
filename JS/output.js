@@ -17,11 +17,6 @@ const showFilters = () => {
         filterPris.style.visibility = "visible";
 } 
 
-const hideFilters = () => {
-    inputP.style.visibility = "hidden";
-        filterPris.style.visibility = "hidden";
-}
-
 const filterPrice = () => {
     let priceArray = getFood.filter( food => food.price < inputP.value);
     foodSection(priceArray);
@@ -35,6 +30,7 @@ const foodSection = (array) => {
         <article>
         <img id="food-sec" src="Bilder/${ food.imageSrc }">
         <h3>${food.name}</h3>
+        <button class="order">Bestill</button>
         <p>${food.info}</p>
         <p>${food.soda}</p>
         <p> Pris: ${food.price} kr</p>

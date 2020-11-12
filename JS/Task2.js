@@ -8,12 +8,13 @@ var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 var easyBtn = document.querySelector("#easyBtn");
 var hardBtn = document.querySelector("#hardBtn");
+var container = document.getElementById('container');
 
 
 easyBtn.addEventListener("click", function () {
   hardBtn.classList.remove("selected");
   easyBtn.classList.add("selected");
-  numSquares = 3;
+  numSquares = 4;
   colors = generateRandomColors(numSquares);
   pickedColor = pickColor();
   rgbCode.textContent = pickedColor;
@@ -66,7 +67,8 @@ for(var i = 0; i < square.length; i++) {
     var clickedColor = this.style.background;
     //compare color to pickedColor
     if (clickedColor === pickedColor) {
-      messageDisplay.textContent = "Good Job!";
+      alert('Bruk rabattkoden: "Sushi2020" i kassen.');
+      messageDisplay.textContent = 'Gratulerer!';
       resetButton.textContent = "Play Again ?";
       changeColors(clickedColor);
       h1.style.background = clickedColor;
@@ -111,5 +113,5 @@ var g = Math.floor(Math.random() * 256)
   //pick a "blue" from 0-255
 var b = Math.floor(Math.random() * 256)
 
-return "rgb(" + r +", " + g + ", " + b +")";
+return "RGB(" + r +", " + g + ", " + b +")";
 }
