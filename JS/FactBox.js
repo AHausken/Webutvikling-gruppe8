@@ -1,4 +1,4 @@
-
+//Creating templet for Web components
 const template = document.createElement('template');
 template.innerHTML = `
     <style>
@@ -311,8 +311,6 @@ template.innerHTML = `
 
 }
 
-
-
     </style>
 
 
@@ -371,6 +369,7 @@ template.innerHTML = `
         
 `;
 
+//Creating Web component (FactBox)
 class FactBox extends HTMLElement{
     constructor(){
         super();
@@ -379,7 +378,6 @@ class FactBox extends HTMLElement{
         this.shadowRoot.appendChild(template.content.cloneNode(true));
     }
 }
-
 
 window.customElements.define('fact-box', FactBox);
 

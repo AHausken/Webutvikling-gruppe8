@@ -1,64 +1,65 @@
 <!DOCTYPE html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <title>Spill og vinn</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="stylesheet" type="text/css" href="CSS/spill.css">
+  <title>Spill og vinn</title>
   </head>
- <link rel="stylesheet" type="text/css" href="CSS/spill.css">
+ 
   <body>
-
-    <nav>
-      <div id="myNavBar" class="navBar">
+<!-------------------------------container connected to navBar.js------------------------------------>
+  <nav>
+    <div id="myNavBar" class="navBar">
           <a class="active" href="spill.html">Spill og vinn</a>
           <a href="fancySushi.html">Fancy sushi</a>
           <a href="anmeldelser.html">Anmeldelser</a>
           <a href="UU.html">UU</a>
           <a href="javascript:void(0);" class="icon" onclick="navBarFunction()">
-              <i class="fa fa-bars"></i>
+          <i class="fa fa-bars"></i>
           </a>
-      </div>
+    </div>
   </nav>
-
-<h1>
- Velg rett farge og..
-  <br>
-  <span id="rgbCode">RGB</span>
-  <br>
-  Vinn Oslos beste sushi!
-</h1>
-
-<div id="stripe">
-  <button id="reset">Nye farger</button>
-  <span id="message"></span>
-  <button id="easyBtn">Lett</button>
-  <button class="selected" id ="hardBtn">Vanskelig</button>
-</div>
-
-<section class="animation-class">
-<img id="sushi1" src="Bilder/maki.png" alt="Sushi bit FOTO">
-<img id="sushi2" src="Bilder/maki.png" alt="Sushi bit FOTO">
-<img id="sushi3" src="Bilder/maki.png" alt="Sushi bit FOTO">
-<img id="sushi4" src="Bilder/maki.png" alt="Sushi bit FOTO">
-<img id="winMan" src="Bilder/chef2.png" alt="Sushi kokk Gratulerer FOTO">  
-<h2 id="winText">Gratulerer! <br> Bruk rabattkoden: SUSHI2020 i kassen.</h2>
-</section>
-
-
+<!---------------------------------Banner text--------------------------------------------------------->
+    <h1>
+      Velg rett farge og..
+      <br>
+      <span id="rgbCode">RGB</span>
+      <br>
+      Vinn Oslos beste sushi!
+    </h1>
+<!---------------------------Buttons uses in game-------------------------------------------------------->
+    <div id="stripe">
+      <button id="reset">Nye farger</button>
+      <span id="message"></span>
+      <button id="easyBtn">Lett</button>
+      <button class="selected" id ="hardBtn">Vanskelig</button>
+    </div>
+<!------------------------------------JS src--------------------------------------------------------------->
+    <section class="animation-class">
+      <img id="sushi1" src="Bilder/maki.png" alt="Sushi bit FOTO">
+      <img id="sushi2" src="Bilder/maki.png" alt="Sushi bit FOTO">
+      <img id="sushi3" src="Bilder/maki.png" alt="Sushi bit FOTO">
+      <img id="sushi4" src="Bilder/maki.png" alt="Sushi bit FOTO">
+      <img id="winMan" src="Bilder/chef2.png" alt="Sushi kokk Gratulerer FOTO">  
+      <h2 id="winText">Gratulerer! <br> Bruk rabattkoden: SUSHI2020 i kassen.</h2>
+    </section>
 
 
-<div id="container">
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-    <div class="square"></div>
-</div>
 
-<script src="JS/anime.min.js"></script>
-<script src="JS/gameWinAnimation.js"></script>
-<script src="JS/spill.js"></script>
-<script src="https://kit.fontawesome.com/49f8d126a2.js" crossorigin="anonymous"></script>
-<script src="JS/navBar.js"></script>
 
-  </body>
+    <div id="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+
+  <script src="JS/anime.min.js"></script>
+  <script src="JS/gameWinAnimation.js"></script>
+  <script src="JS/spill.js"></script>
+  <script src="https://kit.fontawesome.com/49f8d126a2.js" crossorigin="anonymous"></script>
+  <script src="JS/navBar.js"></script>
+
+</body>

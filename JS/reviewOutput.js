@@ -1,4 +1,5 @@
 
+//function creating form for user reviews when button is clicked
 function createForm(){
    const inputBox = document.querySelector('.form-display');
    inputBox.innerHTML = `
@@ -30,7 +31,7 @@ function createForm(){
 
 };
 
-
+//Taking input from the created user review input and storing it as a string in localStorage
 const addReview = e => {
    let reviewData = {
       fName: document.getElementById('input-name').value,
@@ -41,6 +42,7 @@ const addReview = e => {
    outputReview()
 }
 
+//Retriving data from localStorage, making it in to an object and displaying it on page as review
 function outputReview(){
    if(localStorage.getItem('reviewData')){
       let {fName, review} = JSON.parse(localStorage.getItem('reviewData'));

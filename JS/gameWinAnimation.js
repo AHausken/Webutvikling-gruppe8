@@ -1,3 +1,4 @@
+//Getting ids from spill.html
 const sushi1 = document.getElementById('sushi1');
 const sushi2 = document.getElementById('sushi2');
 const sushi3 = document.getElementById('sushi3');
@@ -5,6 +6,7 @@ const sushi4 = document.getElementById('sushi4');
 const chef = document.getElementById('winMan');
 const text = document.getElementById('winText');
 
+//anime.js animations. Function activates when user chooses right color
 const winAnimation = () =>{
         anime({
         targets: sushi1,

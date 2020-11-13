@@ -1,9 +1,12 @@
+/*Mobile screen*/
+
 body{
     margin: 0;
     padding: 0;
     background-color: #989e9e;
 }
 
+/*Navigation bar*/
 .navBar{
     overflow: hidden;
     background-color: #333;
@@ -39,6 +42,8 @@ body{
     margin-bottom: 20px;
 }
 
+/*Review container with grid*/
+
 #review-section{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -62,6 +67,8 @@ body{
 
 }
 
+/*Banner with info*/
+
 .info{
     border-top: 3px solid black;
     border-bottom: 3px solid black;
@@ -84,7 +91,7 @@ body{
     color: rgb(126, 53, 53);
 }
 
-
+/*Write review buttton*/
 .write-reBtn{
     
         background-color: #165baa;
@@ -110,6 +117,7 @@ p, a{
 }
 
 
+/*Reviews styling*/
 .comments{
     border-top: 4px solid rgba(0, 0, 0, 0.541);
     background-color: #238f6d;
@@ -211,7 +219,7 @@ input:checked ~ label{
 
 
 
-
+/*Ipad*/
 @media (min-width: 768px){
 
     #review-section .comments{
@@ -286,6 +294,7 @@ input:checked ~ label{
     
 }
 
+/*Laptop*/
 @media (min-width: 978px){
     #review-section .comments{
         grid-column: auto / span 2.5;
@@ -353,6 +362,7 @@ input:checked ~ label{
     }
 }
 
+/*Mobile navbar*/
 @media screen and (max-width: 600px){
     .navBar a:not(:first-child) {display: none;}
     .navBar a.icon{

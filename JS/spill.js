@@ -1,3 +1,4 @@
+//Getting id from spill.html
 var numSquares = 6;
 var colors = generateRandomColors(numSquares);
 var square = document.querySelectorAll(".square");
@@ -10,7 +11,7 @@ var easyBtn = document.querySelector("#easyBtn");
 var hardBtn = document.querySelector("#hardBtn");
 var winText = document.querySelector('#winText');
 
-
+//When "Easy" button is clicked, only 4 squares appers
 easyBtn.addEventListener("click", function () {
   hardBtn.classList.remove("selected");
   easyBtn.classList.add("selected");
@@ -27,6 +28,7 @@ easyBtn.addEventListener("click", function () {
   }
 });
 
+//Default hard button with 6 squares
 hardBtn.addEventListener("click", function(){
   easyBtn.classList.remove("selected");
   hardBtn.classList.add("selected");
@@ -40,6 +42,7 @@ hardBtn.addEventListener("click", function(){
   }
 });
 
+//Reset button, when click game starts again
 resetButton.addEventListener("click", function(){
   //generate all new colors
   colors = generateRandomColors(numSquares);
@@ -58,6 +61,7 @@ resetButton.addEventListener("click", function(){
 
 rgbCode.textContent = pickedColor;
 
+// if else function. Animation plays if player clicks on the matching color
 for(var i = 0; i < square.length; i++) {
   //add initial colors to squares
   square[i].style.background = colors[i];
@@ -80,6 +84,7 @@ for(var i = 0; i < square.length; i++) {
   })
 }
 
+//New colors and game resets
 function changeColors(color){
   //loop through all squares
 for (var i = 0; i < square.length; i++) {
@@ -105,7 +110,7 @@ function generateRandomColors(num){
   //return that array
   return arr;
 }
-
+//getting random rgb color using math.random
 function randomColor(){
   //pick a "red" from 0-255
 var r = Math.floor(Math.random() * 256)

@@ -1,3 +1,4 @@
+//Array with name, description, image and price. connected to outputAndFilters.js
 const getFood =  [
         {
             id: 1,

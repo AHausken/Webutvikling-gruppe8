@@ -7,13 +7,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-    
-
     <title>Fancy Sushi</title>
 
 </head>
 <body>
-
+<!---------------container and navigation meny----------------------------->
     <div class="container">
 
         <nav>
@@ -27,42 +25,35 @@
                 </a>
             </div>
         </nav>        
-
+<!------------------Animated banner--------------------------------------->
         <section class="banner">
+<!---------------First animation text and chef---------------------------->
             <h2 id="welcome-header">Vi har Oslos beste sushi! <br> Ta kontakt om du ønsker catering.</h2>
                 <img id="welcome-picture" src="Bilder/chef1.png" alt="Sushi kokk ønsker velkommen FOTO">
             
-            
-
+<!---------------Second animation text and salmon maki img----------------->
             <h1 id="sale-header">Tilbud, kun i dag! <br> kjøp 2 Salmon maki, betal for 1. </h1>
             <img id="sale-picture" src="Bilder/salmon-maki.jpg" alt="Salg på Salmon maki">
 
             <img id="banner-pic" src="Bilder/banner-bg.jpg" alt="Reklame banner FOTO">
         </section>
 
+<!---------------container and navigation meny----------------------------->
         <aside class="filter-section">
-
             <i class="fas fa-filter"></i>
             <input  id="inputP" type="number" min="51" max="300" placeholder="Pris">
             <input  id="filter-pris" type="button" value="søk">
             <input id="filter-low-high" type="button" value="Lav-Høy">
             <input id="filter-high-low" type="button" value="Høy-lav">
-            
         </aside>
 
-        
-
+<!--Foodsection meal img, name, description and price will be loaded here thougt getFood array-->
         <main>
-            
             <section id="food-section"></section>
 
             <footer>Høyskolen Kristiania &copy; </footer>
-
         </main>
 
-
-
-    </div>
     <script src="JS/anime.min.js"></script>
     <script src="JS/bannerAnimation.js"></script>
     <script src="JS/navBar.js"></script>

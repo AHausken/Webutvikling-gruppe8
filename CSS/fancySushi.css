@@ -4,10 +4,13 @@ body{
     background-color: #989e9e;
 }
 
+/*Mobile screen*/
+
 #food-sec{
     width: 100%;
 }
 
+/*Navigation bar*/
 .navBar{
     overflow: hidden;
     background-color: #333;
@@ -51,6 +54,7 @@ body{
     position: relative;
 }
 
+/*Animation styling*/
 #welcome-header{
     position: absolute;
     margin-left: 60px;
@@ -87,12 +91,11 @@ body{
     border-radius: 5%;
 }
 
-
-
 #banner-pic{
     width: 100%;
 }
 
+/*Filter styling*/
 .filter-section{
     
     border-radius: 5%;
@@ -107,23 +110,6 @@ body{
     font-size: 21px;
     margin-left: 20px;
     margin-top: 13px;
-}
-
-.order{
-    background-color: #165baa;
-        width: 100%;
-        color: white;
-        text-align: center;
-        float: inline-end;
-        text-decoration: none;
-        font-size: 5vw;
-        margin-bottom: 5px;
-        border-top: 1.5px solid black;
-        border-left: 1.5px solid #238f6d;
-        border-right: 1.5px solid #238f6d;
-        border-bottom: 1.5px solid black;
-        cursor: pointer;
-        border-radius: 5%;
 }
 
 #filter-pris, #filter-high-low, #filter-low-high{
@@ -146,7 +132,25 @@ body{
     width: 60px;
 }
 
+/*Order button styling*/
+.order{
+    background-color: #165baa;
+        width: 100%;
+        color: white;
+        text-align: center;
+        float: inline-end;
+        text-decoration: none;
+        font-size: 5vw;
+        margin-bottom: 5px;
+        border-top: 1.5px solid black;
+        border-left: 1.5px solid #238f6d;
+        border-right: 1.5px solid #238f6d;
+        border-bottom: 1.5px solid black;
+        cursor: pointer;
+        border-radius: 5%;
+}
 
+/*Food container with grid*/
 #food-section{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -181,6 +185,8 @@ body{
     border: 4px solid rgb(0, 0, 0);
 }
 
+/*Text*/
+
 p, h3{
     padding: 5px;
 }
@@ -193,6 +199,7 @@ footer{
     height: 30px;
 }
 
+/*Ipad*/
 @media (min-width: 768px){
     #food-section article{
         grid-column: auto / span 2;
@@ -273,6 +280,8 @@ footer{
     }
     
 }
+
+/*Laptop*/
 
 @media (min-width: 978px){
     #food-section article{

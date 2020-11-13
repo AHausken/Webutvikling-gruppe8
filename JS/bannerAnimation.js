@@ -1,8 +1,10 @@
+//Getting ids from fancysushi.html
 const saleHeader = document.getElementById('sale-header');
 const salePicture = document.getElementById('sale-picture');
 const welcomeHeader = document.getElementById('welcome-header');
 const WelcomePicture = document.getElementById('welcome-picture');
 
+//Anime.js function. Begins with chef and welcome text playing one time. Ends with sale picture and text
 anime({
     targets: saleHeader,
     translateX: 800,

@@ -1,10 +1,11 @@
+/*Mobile screen*/
 body {
   background-color: #989e9e;
   margin: 0;
   font-family: sans-serif;
   font-weight: normal;
 }
-
+/*Navigation bar*/
 .navBar{
   overflow: hidden;
   background-color: #333;
@@ -34,6 +35,7 @@ body {
   display: none;
 }
 
+/*squers*/
 .square {
   width: 100%;
   background: white;
@@ -45,6 +47,7 @@ body {
   border: 2px solid black;
 }
 
+/*Container adding grid*/
 #container {
   display: grid;
   grid-gap: 50px;
@@ -57,6 +60,7 @@ body {
   grid-column: auto / span 3;
 }
 
+/*Headings*/
 h1 {
   color: rgba(255, 255, 255, 0.884);
   line-height: 1.5;
@@ -66,18 +70,13 @@ h1 {
   padding: 20px 0;
 }
 
+/*New color, Easy and hard button*/
 #stripe {
   background: white;
   height: 70px;
   text-align: center;
   color: black;
   font-size: 3.5vw;
-}
-
-
-.selected {
-  color: white;
-  background: steelblue;
 }
 
 #rgbCode {
@@ -117,6 +116,7 @@ button:focus{
   width: 20%;
 }
 
+/*Animations styling*/
 #winMan{
   position: absolute;
   width: 20%;
@@ -126,7 +126,7 @@ button:focus{
 
 #winText{
   position: absolute;
- text-align: center;
+  text-align: center;
   margin-top: 369px;
   margin-left: 10px;
   visibility: hidden;
@@ -163,7 +163,7 @@ button:focus{
 }
 
 
-
+/*Ipad*/
 @media (min-width: 768px){
   body{
     overflow: hidden;
@@ -233,6 +233,7 @@ button:focus{
 
 }
 
+/*Laptop*/
 @media (min-width: 998px){
 
   body{
@@ -290,6 +291,7 @@ button:focus{
   }
 }
 
+/*Mobile nav*/
 @media screen and (max-width: 600px){
   .navBar a:not(:first-child) {display: none;}
   .navBar a.icon{
