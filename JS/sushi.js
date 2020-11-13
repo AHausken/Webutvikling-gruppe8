@@ -29,8 +29,8 @@ const getFood =  [
 
         {
             id: 4,
-            name: "Sumo deluxe combo",
-            imageSrc: "Sumo-deluxe-combo-16_9.jpg",
+            name: "wrap",
+            imageSrc: "wrap.jpg",
             price: 299,
             soda: "(4 brus ink.)",
             info: "Usikker på hva du vil ha? Prøv vår nyhet - Sumo deluxe combo. Her får du et utvalg av alle våre retter, perfekt til Familien!. "
