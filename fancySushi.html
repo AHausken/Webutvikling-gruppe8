@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    <title>Byens beste sushi </title>
+    <link rel="stylesheet" type="text/css" href="CSS/fancySushi.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    
+
+    <title>Fancy Sushi</title>
 
 </head>
 <body>
@@ -13,10 +18,10 @@
 
         <nav>
             <div id="myNavBar" class="navBar">
-                <a class="active" href="#">Fancy sushi</a>
-                <a href="Anmeldelser.html">Anmeldelser</a>
+                <a class="active" href="fancySushi.html">Fancy sushi</a>
+                <a href="anmeldelser.html">Anmeldelser</a>
                 <a href="UU.html">UU</a>
-                <a href="Task2.html">Spill</a>
+                <a href="spill.html">Spill</a>
                 <a href="javascript:void(0);" class="icon" onclick="navBarFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -25,12 +30,14 @@
 
         <section class="banner">
             <h2 id="welcome-header">Vi har Oslos beste sushi! <br> Ta kontakt om du ønsker catering.</h2>
-            <img id="welcome-picture" src="Bilder/chef1.png" alt="">
+                <img id="welcome-picture" src="Bilder/chef1.png" alt="Sushi kokk ønsker velkommen FOTO">
+            
+            
 
             <h1 id="sale-header">Tilbud, kun i dag! <br> kjøp 2 Salmon maki, betal for 1. </h1>
-            <img id="sale-picture" src="Bilder/salmon-maki.jpg">
+            <img id="sale-picture" src="Bilder/salmon-maki.jpg" alt="Salg på Salmon maki">
 
-            <img id="banner-pic" src="Bilder/banner-bg.jpg" alt="">
+            <img id="banner-pic" src="Bilder/banner-bg.jpg" alt="Reklame banner FOTO">
         </section>
 
         <aside class="filter-section">
@@ -38,6 +45,8 @@
             <i class="fas fa-filter"></i>
             <input  id="inputP" type="number" min="51" max="300" placeholder="Pris">
             <input  id="filter-pris" type="button" value="søk">
+            <input id="filter-low-high" type="button" value="Lav-Høy">
+            <input id="filter-high-low" type="button" value="Høy-lav">
             
         </aside>
 
@@ -56,9 +65,9 @@
     </div>
     <script src="JS/anime.min.js"></script>
     <script src="JS/bannerAnimation.js"></script>
-    <script src="JS/nav-bar.js"></script>
+    <script src="JS/navBar.js"></script>
     <script src="JS/sushi.js"></script>
-    <script src="JS/output.js"></script>
+    <script src="JS/outputAndFilter.js"></script>
     <script src="https://kit.fontawesome.com/49f8d126a2.js" crossorigin="anonymous"></script>
 </body>
 

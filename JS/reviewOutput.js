@@ -49,6 +49,22 @@ function outputReview(){
 
          <article class="comments">
             <h3>${fName}</h3>
+            <div class="stars">
+               <input type="radio" id="star5">
+               <label for="star5" class="fas fa-star"></label>
+
+               <input type="radio" id="star4">
+               <label for="star4" class="fas fa-star"></label>
+
+               <input type="radio" id="star3">
+               <label for="star3" class="fas fa-star"></label>
+
+               <input type="radio" id="star2">
+               <label for="star2" class="fas fa-star"></label>
+
+               <input type="radio" id="star1">
+               <label for="star1" class="fas fa-star"></label>
+            </div>
             <p>${review}</p>
          </article>
 

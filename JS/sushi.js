@@ -23,7 +23,7 @@ const getFood =  [
             imageSrc: "salmon-maki.jpg",
             price: 50,
             soda: "(Drikke + 35,-)",
-            info: "Salmon Maki sushi ris fylt med rå fersk laks og vårløk og pakket inn i nori.<br> <br>"
+            info: "Salmon Maki sushi ris fylt med rå fersk laks og vårløk og pakket inn i nori.<br><br>"
         },
 
         {

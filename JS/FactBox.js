@@ -168,10 +168,23 @@ template.innerHTML = `
                 grid-template-columns: repeat(4, 1fr);
                 grid-template-rows: repeat(10, 1fr);
         }
-
+    
         .header{
             grid-column: 1/5;
             grid-row: 1/2;
+        }
+
+        ::slotted(p){
+            padding: 5px;
+            font-size: 3.5vw;
+        }
+
+        ::slotted(ul){
+            font-size: 3.5vw;
+        }
+    
+        ::slotted(h3){
+            padding: 5px;
         }
 
         .card1{
@@ -199,7 +212,7 @@ template.innerHTML = `
         }
     
         .card5{
-            background-color: white;
+            background-color: pink;
             grid-column: 3/5;
         }
     
@@ -210,7 +223,7 @@ template.innerHTML = `
         }
     
         .card7{
-            background-color: white;
+            background-color: green;
             grid-column: 1/3;
             grid-row: 6/7;
         }
@@ -235,6 +248,19 @@ template.innerHTML = `
     .header{
         grid-column: 1/4;
         grid-row: 1/2;
+    }
+
+    ::slotted(p){
+        padding: 5px;
+        font-size: 5vw;
+    }
+
+    ::slotted(ul){
+        font-size: 5vw;
+    }
+
+    ::slotted(h3){
+        padding: 5px;
     }
 
     .card1{

@@ -8,7 +8,7 @@ var h1 = document.querySelector("h1");
 var resetButton = document.querySelector("#reset");
 var easyBtn = document.querySelector("#easyBtn");
 var hardBtn = document.querySelector("#hardBtn");
-var container = document.getElementById('container');
+var winText = document.querySelector('#winText');
 
 
 easyBtn.addEventListener("click", function () {
@@ -67,14 +67,15 @@ for(var i = 0; i < square.length; i++) {
     var clickedColor = this.style.background;
     //compare color to pickedColor
     if (clickedColor === pickedColor) {
-      alert('Bruk rabattkoden: "Sushi2020" i kassen.');
-      messageDisplay.textContent = 'Gratulerer!';
-      resetButton.textContent = "Play Again ?";
+      winAnimation();
+      winText.style.visibility = "visible";
+      messageDisplay.textContent = "Rett farge!";
+      resetButton.textContent = "Spill igjen?";
       changeColors(clickedColor);
       h1.style.background = clickedColor;
     }else{
       this.style.background = "#232323";
-      messageDisplay.textContent = "Try Again";
+      messageDisplay.textContent = "Prøv igjen..";
     }
   })
 }
@@ -113,5 +114,5 @@ var g = Math.floor(Math.random() * 256)
   //pick a "blue" from 0-255
 var b = Math.floor(Math.random() * 256)
 
-return "RGB(" + r +", " + g + ", " + b +")";
+return "rgb(" + r +", " + g + ", " + b +")";
 }
